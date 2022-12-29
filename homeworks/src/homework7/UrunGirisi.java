@@ -50,12 +50,12 @@ public class UrunGirisi {
 		
 		System.out.println();
 		
-		liste[2]="game console";
+		liste[3]="game console";
 		
 		System.out.println(Arrays.toString(liste));
 		System.out.println();
 		
-		if((Arrays.binarySearch(liste, "game console")==2)) {
+		if((Arrays.binarySearch(liste, "game console")==3)) {
 			
 			System.out.println("Degisiklik yaptiginiz urun listeye eklenmistir.");			
 			

@@ -18,7 +18,7 @@ public class Question1 {
 		 * 
 		 * 1) instance variables -SINIF- ’in içinde ama  -METHODLAR- ’in disinda olusturulur.
 		 * 2) Instance variables bir -NESNEYE- ’e baglidir.Dolayisiyla, bir NESNE  olusturuldugunda olusur ve   NESNE  silindiginde silinirler.
-		 * 3) Instance variables DINAMIK DEGISKENLER ismi ile cagrilabilirler.
+		 * 3) Instance variables NESNE ismi ile cagrilabilirler.
 		 * 4) Instance variable icin ilk deger atamasi yapmak ZORUNLU DEGIL dir. Eger ilk atama yapilmazsa default deger alir.
 		 * 5) Her yeni obje olusturuldugunda, instance variables ilk atanan degere esit olur. / True
 		 */

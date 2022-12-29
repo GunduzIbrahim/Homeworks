@@ -18,7 +18,7 @@ public class Question2 {
 	 * 
 	 * 1) Static variables -SINIF- ’in içinde ama  -METHODLAR- ’in  disinda olusturulur.
 	 * 2) Static variables bir CLASS ’a baglidir. Dolayisiyla, bir .......... olusturuldugunda olusur ve.......... silindiginde silinirler.
-	 * 3) Static variables  SINIF DEGISKENLERI ismi ile cagrilabilirler.
+	 * 3) Static variables  CLASS ismi ile cagrilabilirler.
 	 * 4) Static variable icin ilk deger atamasi yapmak ZORUNLU DEGIL dir. Eger ilk atama yapilmazsa default deger alir.
 	 * 5) Her yeni class variable olusturuldugunda, ilk atanan degere esit olur. / False
 	 */
