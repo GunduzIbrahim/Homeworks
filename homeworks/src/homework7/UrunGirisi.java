@@ -55,6 +55,7 @@ public class UrunGirisi {
 		System.out.println(Arrays.toString(liste));
 		System.out.println();
 		
+		System.out.println((Arrays.binarySearch(liste, "game console")));
 		if((Arrays.binarySearch(liste, "game console")<=4)) {
 			
 			System.out.println("Degisiklik yaptiginiz urun listeye eklenmistir.");			
