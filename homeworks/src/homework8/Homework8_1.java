@@ -22,6 +22,7 @@ public class Homework8_1 {
 	}
 
 	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner (System.in);
 
 		/*
@@ -32,7 +33,8 @@ public class Homework8_1 {
 		System.out.println();
 		System.out.println("Soru1)");
 		System.out.println();
-		//elemanCarp();
+		
+		elemanCarp();
 		
 		
 		/*
