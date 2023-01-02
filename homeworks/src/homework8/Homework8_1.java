@@ -82,6 +82,30 @@ public class Homework8_1 {
 				System.out.println("arr1 ve arr2 dizilerinin "+i+". indeks elemanlari esit degil");
 		}
 		
+		//Grup toplantisinda soruyu yanlis anladigim degerlendirilip tarafimca tekrar cozumlendi.
+		System.out.println();
+		System.out.println("Soru3)(tekrar yapilan kisim)");
+		System.out.println();
+		//int [][] arr1 = { {1,2}, {3,4,5}, {6} } , arr2 = { {7,8,9}, {10,11}, {12} };
+
+		int toplam;
+
+		for (int i = 0; i < arr1.length; i++) {
+			for (int j = 0; j < arr1[i].length; j++) {
+				for (int k = 0; k < arr2.length; k++) {
+					for (int l = 0; l < arr2[k].length; l++) {
+
+						if ((i == k) && (j == l)) {
+
+							toplam = arr1[i][j] + arr2[k][l];
+							System.out.println("" + arr1[i][j] + " + " + arr2[k][l] + " = " + toplam);
+						}
+					}
+				}
+
+			}
+		}
+		
 		/*
 		 * Soru4) Asagidaki multidimensional array’in ic array’lerindeki 
 		 * tum elemanlarin toplamini birer birer bulan ve herbir sonucu 

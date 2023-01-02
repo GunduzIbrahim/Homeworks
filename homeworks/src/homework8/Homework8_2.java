@@ -27,6 +27,7 @@ public class Homework8_2 {
 		 */
 		
 		harfler.add("B");
+		System.out.println(harfler);
 		harfler.add(1, "L");
 		System.out.println(harfler);
 		System.out.println();
