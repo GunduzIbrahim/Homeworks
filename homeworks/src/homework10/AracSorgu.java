@@ -140,7 +140,7 @@ public class AracSorgu {
 		for (int i=0; i<10;i++) {
 			
 			if(arac[i].getPlaka().toString().equals(girilenPlaka)) {
-				sorgulanan = ("======"+arac[i].getAracTescilDurumu().toString()+"=====\n\n"
+				sorgulanan = ("======"+arac[i].getAracTescilDurumu().toString()+"======\n\n"
 										+"Tescil Íli    : "+arac[i].getAracTescilYeri().toString()+"\n"
 										+"Ruhsat Sahibi : "+arac[i].getRuhsatSahibi().toString()+"\n"
 										+"Ruhsat Yili   : "+arac[i].getRuhsatTarihi()+"\n"
