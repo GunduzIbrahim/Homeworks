@@ -54,7 +54,7 @@ public class AracSorgu {
 		arac2.setAracMarkasi("Nissan");
 		arac2.setAracTipi("Kamyonet");
 		arac2.setAracRengi("Siyah");
-		arac2.setAracTescilDurumu("!!!CALINTI-KAYIP!!!");
+		arac2.setAracTescilDurumu("!!!  CALINTI-KAYIP  !!!");
 		arac2.setAracTescilYeri("Kocaeli-Izmit");
 	
 		arac3.setPlaka("06HTR6589");
@@ -81,7 +81,7 @@ public class AracSorgu {
 		arac5.setAracMarkasi("Ford");
 		arac5.setAracTipi("Otomobil");
 		arac5.setAracRengi("Mavi");
-		arac5.setAracTescilDurumu("!!!TRAFIKTEN MEN!!!");
+		arac5.setAracTescilDurumu("!!!  TRAFIKTEN MEN  !!!");
 		arac5.setAracTescilYeri("Izmir-Bornova");
 		
 		arac6.setPlaka("24KTY458");
@@ -131,7 +131,7 @@ public class AracSorgu {
 		
 		System.out.println("Lutfen sorgulamak istediginiz plakayi giriniz (or:12AB3456):");
 		String girilenPlaka = scan.nextLine();
-		girilenPlaka = girilenPlaka.toUpperCase();
+		girilenPlaka = girilenPlaka.toUpperCase().trim().replaceAll(" ", "");
 		String sorgulanan="";
 		
 		//@SuppressWarnings("unlikely-arg-type")
@@ -140,7 +140,7 @@ public class AracSorgu {
 		for (int i=0; i<10;i++) {
 			
 			if(arac[i].getPlaka().toString().equals(girilenPlaka)) {
-				sorgulanan = ("==="+arac[i].getAracTescilDurumu().toString()+"===\n\n"
+				sorgulanan = ("======"+arac[i].getAracTescilDurumu().toString()+"=====\n\n"
 										+"Tescil Íli    : "+arac[i].getAracTescilYeri().toString()+"\n"
 										+"Ruhsat Sahibi : "+arac[i].getRuhsatSahibi().toString()+"\n"
 										+"Ruhsat Yili   : "+arac[i].getRuhsatTarihi()+"\n"
