@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Memur extends Muhasebe {
 
-	public static void main(String[] args) {
+	public static void memurlar() {
 		
 		Memur memur1 = new Memur();
 		memur1.id = memur1.idAtamaMemur();
@@ -56,5 +56,8 @@ public class Memur extends Muhasebe {
 			System.out.println();
 			
 		}
+		
+		
+		
 	}
 }

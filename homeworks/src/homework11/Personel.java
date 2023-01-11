@@ -62,3 +62,7 @@ public int idAtamaIsci() {
 		return id;
 	}
 }
+
+	
+	
+

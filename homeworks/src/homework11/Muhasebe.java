@@ -12,3 +12,4 @@ public class Muhasebe extends Personel{
 		return aylik;
 	}
 }
+

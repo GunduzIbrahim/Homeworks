@@ -35,6 +35,8 @@ public class Isci extends Muhasebe{
 		isci3.saatlikUcret = 44;
 		isci3.maas = isci3.maasHesapla();
 		
+		Memur.memurlar();
+		
 		List<Isci> isciler = new ArrayList<>(Arrays.asList(isci1,isci2,isci3));
 		
 //		for(Isci isci:isciler) {
