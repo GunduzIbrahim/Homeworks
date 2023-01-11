@@ -25,7 +25,8 @@ public class Question1 {
 	 * 
 	 * C-4)super() super(ust) classta bulunan constructor'a erisebilmek icin kullanilir, 
 	 * 	this() ise kendi classindaki constructora erisebilmek icin kullanilir.
-	 * 
+	 * Ayrica ust siniftan degisken ve/veya method cagirmak icin kullanilabilir ancak 
+	 * tavsiye edilmez cunku ayni isim olursa cakisma yasanabilir. 
 	 * 
 	 * 5-super() ile super.’nin farki nedir?
 	 * 
