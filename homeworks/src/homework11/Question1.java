@@ -18,7 +18,7 @@ public class Question1 {
 	 * 
 	 * 3-Hangi access modifier’lar inherit edilebilir ?
 	 * 
-	 * C-3) public ve protect
+	 * C-3) public ve protected
 	 * 
 	 * 
 	 * 4-super() ile this()’in farki nedir?

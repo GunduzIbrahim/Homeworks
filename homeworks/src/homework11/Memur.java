@@ -5,35 +5,50 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Memur extends Muhasebe {
+	
+	public Memur (int id, String isim, String soyIsim, String adres, String telefon, int saatlikUcret, String statu, int maas) {
+		super(id, isim, soyIsim, adres, telefon, saatlikUcret, statu, maas);
+		
+	}
 
-	public static void memurlar() {
+	public static void memurlar ()  {
 		
-		Memur memur1 = new Memur();
-		memur1.id = memur1.idAtamaMemur();
-		memur1.isim = "Saffet";
-		memur1.soyisim = "ZORLU";
-		memur1.adres = "Istanbul\\Besiktas";
-		memur1.telefon = "0212 012 34 56";
-		memur1.saatlikUcret = 72;
-		memur1.maas = memur1.maasHesapla();
+		Muhasebe calisan = new Muhasebe();
 		
-		Memur memur2 = new Memur();
-		memur2.id = memur2.idAtamaMemur();
-		memur2.isim = "Kayra";
-		memur2.soyisim = "COBANOGLU";
-		memur2.adres = "Istanbul\\Kadikoy";
-		memur2.telefon = "0216 032 10 01";
-		memur2.saatlikUcret = 70;
-		memur2.maas = memur2.maasHesapla();
 		
-		Memur memur3 = new Memur();
-		memur3.id = memur3.idAtamaMemur();
-		memur3.isim = "Iclal";
-		memur3.soyisim = "KARABAYIR";
-		memur3.adres = "Istanbul\\Mecidiyekoy";
-		memur3.telefon = "0212 789 99 88";
-		memur3.saatlikUcret = 73;
-		memur3.maas = memur3.maasHesapla();
+		calisan.id = calisan.idAtamaMemur();
+		calisan.isim = "Saffet";
+		calisan.soyIsim = "ZORLU";
+		calisan.adres = "Istanbul\\Besiktas";
+		calisan.telefon = "0212 012 34 56";
+		calisan.saatlikUcret = 75;
+		calisan.statu = "Buro Sefi";
+		calisan.maas = calisan.maasHesapla();
+		Memur memur1 = new Memur(calisan.id, calisan.isim, calisan.soyIsim, calisan.adres, calisan.telefon, calisan.saatlikUcret,calisan.statu, calisan.maas);
+		
+		
+		calisan.id = calisan.idAtamaMemur();
+		calisan.isim = "Kayra";
+		calisan.soyIsim = "COBANOGLU";
+		calisan.adres = "Istanbul\\Kadikoy";
+		calisan.telefon = "0216 032 10 01";
+		calisan.saatlikUcret = 71;
+		calisan.statu = "Buro Memuru";
+		calisan.maas = calisan.maasHesapla();
+		Memur memur2 = new Memur(calisan.id, calisan.isim, calisan.soyIsim, calisan.adres, calisan.telefon, calisan.saatlikUcret,calisan.statu, calisan.maas);
+
+		
+		
+		calisan.id = calisan.idAtamaMemur();
+		calisan.isim = "Iclal";
+		calisan.soyIsim = "KARABAYIR";
+		calisan.adres = "Istanbul\\Mecidiyekoy";
+		calisan.telefon = "0212 789 99 88";
+		calisan.saatlikUcret = 70;
+		calisan.statu = "Asistan";
+		calisan.maas = calisan.maasHesapla();
+		Memur memur3 = new Memur(calisan.id, calisan.isim, calisan.soyIsim, calisan.adres, calisan.telefon, calisan.saatlikUcret,calisan.statu, calisan.maas);
+
 		
 		List<Memur> memurlar = new ArrayList<>(Arrays.asList(memur1,memur2,memur3));
 				
@@ -49,9 +64,10 @@ public class Memur extends Muhasebe {
 			
 			System.out.println((i+1)+".Memurun \n=========\nId no    : "+memurlar.get(i).id);
 			System.out.println("Adi      : "+memurlar.get(i).isim);
-			System.out.println("Soyadi   : "+memurlar.get(i).soyisim);
+			System.out.println("Soyadi   : "+memurlar.get(i).soyIsim);
 			System.out.println("Adresi   : "+memurlar.get(i).adres);
 			System.out.println("Telefonu : "+memurlar.get(i).telefon);
+			System.out.println("Statusu  : "+memurlar.get(i).statu);
 			System.out.println("Maasi    : "+memurlar.get(i).maas+" TL");
 			System.out.println();
 			

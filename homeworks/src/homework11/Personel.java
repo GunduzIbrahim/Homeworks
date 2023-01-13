@@ -35,12 +35,25 @@ public class Personel {
 	
 	public int id;
 	public String isim;
-	public String soyisim;
+	public String soyIsim;
 	public String adres;
 	public String telefon;
 	public static int idAtaMemur=123456;
 	public static int idAtaIsci=456789;
 	
+	public Personel() {
+		
+		super();
+	}
+	
+	public Personel(int id, String isim, String soyIsim, String adres, String telefon) {
+		super();
+		this.id = id;
+		this.isim = isim;
+		this.soyIsim = soyIsim;
+		this.adres = adres;
+		this.telefon = telefon;
+	}
 	public int idAtamaMemur() {
 		
 //		int randomNumber;
@@ -51,7 +64,7 @@ public class Personel {
 		idAtaMemur++;
 		return id;
 	}
-public int idAtamaIsci() {
+	public int idAtamaIsci() {
 		
 //		int randomNumber;
 //		Random random = new Random();
