@@ -4,8 +4,8 @@ package homework12_0;
 	
 	
 	/*
-	 * 1) public class test01'de bulunan getDetails methodu int donuslu oldugundan String yerine integer bir variable
-	 * tanimlanmali. Console'da : Derived class GFG yazacaktir.
+	 * 1) public class test01'de bulunan getDetails methodu int donuslu oldugundan int yerine void yazilmali,
+	 * daha sonra return silinmeli. Console'da : Derived class GFG yazacaktir.
 	 * 
 	 * 
 	 * 2) public class test02'de bulunan getDetails methodu protected olarak tanimlandigi icin override olabilmesi
