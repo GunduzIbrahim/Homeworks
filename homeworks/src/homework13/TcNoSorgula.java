@@ -14,8 +14,8 @@ public class TcNoSorgula {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Lutfen 11 haneli TC Kimlik numaranazi giriniz..: ");
 		String girilenTc = scan.nextLine();
-		System.out.println(girilenTc.length());
-		System.out.println(girilenTc.charAt(girilenTc.length()-1));
+//		System.out.println(girilenTc.length());
+//		System.out.println(girilenTc.charAt(girilenTc.length()-1));
 		
 		
 			try {
@@ -31,18 +31,20 @@ public class TcNoSorgula {
 					}
 				}
 				catch(IllegalArgumentException e){
-					System.out.println("Tc Kimlik numaranizin son hanesini tek girdiniz, lutfen tekrar giriniz : ");
+					System.out.println("\nTC Kimlik numaranizin son hanesini tek sayi girdiniz, lutfen tekrar giriniz : ");
+					e.printStackTrace();
 					}
 				}
 				
 			catch(IllegalArgumentException e){
 		
-					System.out.println("TC Kimlik numaranazi eksik ya da fazla girdiniz, lutfen tekrar giriniz : ");
+					System.out.println("\nTC Kimlik numaranazi eksik ya da fazla girdiniz, lutfen tekrar giriniz : ");
+					e.printStackTrace();
 			}
 		
 			finally {
 			
-					System.out.println("Girilen TC Kimlik numarasi : "+girilenTc);
+					System.out.println("\nGirilen TC Kimlik numarasi : "+girilenTc);
 		
 					scan.close();
 			}

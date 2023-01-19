@@ -30,7 +30,7 @@ public class SonKullanmaTarihiChecked {
 					 			+zamanFarki.getDays()+" gun vardir");
 		}
 		else {
-			throw new UrunKontrolCheckedException("Urunun son kullanma tarihi gecmis..!!!");
+			throw new UrunKontrolCheckedException("!!!Urunun son kullanma tarihi gecmis..!!!");
 		}
 	}
 }
