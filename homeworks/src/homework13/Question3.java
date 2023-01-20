@@ -28,4 +28,4 @@ public class Question3 {
 	 * 		- input/output islemlerinde ortaya cikan istisnai durum class'i, checked exception'dir. Ayrica CompileTimeException'dir(CTE)
 
 	 */
-}
+} 

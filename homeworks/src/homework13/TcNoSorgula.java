@@ -8,48 +8,57 @@ public class TcNoSorgula {
 		TcNoSorgula sorgu = new TcNoSorgula();
 		sorgu.tcSorgula();
 	}
-	
+
 	public void tcSorgula() {
-		
+
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Lutfen 11 haneli TC Kimlik numaranazi giriniz..: ");
 		String girilenTc = scan.nextLine();
 //		System.out.println(girilenTc.length());
 //		System.out.println(girilenTc.charAt(girilenTc.length()-1));
-		
-		
-			try {
-				if (girilenTc.length()!=11) {
-		
-				throw new IllegalArgumentException("TC No 11 haneli olmalidir..!");
-				}
-				
-				try {	
-					if (Integer.valueOf(girilenTc.substring(10, 11))%2!=0){
-					throw new IllegalArgumentException("TC No son basamak cift olmalidir..!");
-					
-					}
-				}
-				catch(IllegalArgumentException e){
-					System.out.println("\nTC Kimlik numaranizin son hanesini tek sayi girdiniz, lutfen tekrar giriniz : ");
-					e.printStackTrace();
-					}
-				}
-				
-			catch(IllegalArgumentException e){
-		
-					System.out.println("\nTC Kimlik numaranazi eksik ya da fazla girdiniz, lutfen tekrar giriniz : ");
-					e.printStackTrace();
-			}
-		
-			finally {
-			
-					System.out.println("\nGirilen TC Kimlik numarasi : "+girilenTc);
-		
-					scan.close();
-			}
-	}		
-	
-}			
-				
+		char ch[] = girilenTc.toCharArray();
+		try {
+			for (int i = 0; i < girilenTc.length(); i++) {
 
+				if (Character.isDigit(ch[i]) != true) {
+
+					throw new IllegalArgumentException("TC Kimlik No rakamlardan olusmalidir...!");
+
+				}
+			}
+			try {
+				if (girilenTc.length() != 11) {
+
+					throw new IllegalArgumentException("TC No 11 haneli olmalidir..!");
+				}
+
+				try {
+					if (Integer.valueOf(girilenTc.substring(10, 11)) % 2 != 0) {
+						throw new IllegalArgumentException("TC No son basamak cift olmalidir..!");
+
+					}
+				} catch (IllegalArgumentException e) {
+					System.out.println(
+							"\nTC Kimlik numaranizin son hanesini tek sayi girdiniz, lutfen tekrar giriniz : ");
+					e.printStackTrace();
+				}
+			}
+
+			catch (IllegalArgumentException e) {
+
+				System.out.println("\nTC Kimlik numaranazi eksik ya da fazla girdiniz, lutfen tekrar giriniz : ");
+				e.printStackTrace();
+			}
+
+		} catch (IllegalArgumentException e) {
+			System.out.println("TC Kimlik No rakamlardan olusmalidir...!");
+			e.printStackTrace();
+		} finally {
+
+			System.out.println("\nGirilen TC Kimlik numarasi : " + girilenTc);
+
+			scan.close();
+		}
+	}
+
+}
