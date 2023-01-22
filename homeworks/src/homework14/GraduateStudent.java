@@ -8,6 +8,8 @@ public class GraduateStudent extends Student {
 	
 	public GraduateStudent(int no, String name, int year, Date dob, String major,String advisor, String thesis) {
 		super(no, name, year, dob, major);
+		this.advisor=advisor;
+		this.thesis=thesis;
 	}
 
 	public void study() {

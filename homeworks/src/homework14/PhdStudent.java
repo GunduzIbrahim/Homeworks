@@ -9,6 +9,7 @@ public class PhdStudent extends GraduateStudent{
 	public PhdStudent(int no, String name, int year, Date dob, String major, String advisor, 
 						String thesis, boolean qualifyingExamTaken ) {
 		super(no, name, year, dob, major, advisor, thesis);
+		this.qualifyingExamTaken=qualifyingExamTaken;
 	}
 
 	public void study(){

@@ -8,6 +8,7 @@ public class UndergraduateStudent extends Student{
 	
 	public UndergraduateStudent(int no, String name, int year, Date dob, String major, String minor) {
 		super(no, name, year, dob, major);
+		this.minor=minor;
 	}
 
 	public void study() {
