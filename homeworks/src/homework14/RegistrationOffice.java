@@ -14,7 +14,7 @@ public class RegistrationOffice{
 	}
 	public void registerStudent(Student student) {
 		newStudent = student;
-		System.out.println(newStudent.toString());
+		System.out.println(newStudent);
 	
 	}
 
