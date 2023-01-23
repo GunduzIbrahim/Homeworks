@@ -1,6 +1,6 @@
 package homework14;
 
-public class RegistrationOffice {
+public class RegistrationOffice{
 	
 	Student newStudent;
 
@@ -12,10 +12,10 @@ public class RegistrationOffice {
 		return getAStudent();
 		
 	}
-	public void registerStudent() {
-		
-		newStudent.register();
-		
+	public void registerStudent(Student student) {
+		newStudent = student;
+		System.out.println(newStudent.toString());
+	
 	}
 
 }

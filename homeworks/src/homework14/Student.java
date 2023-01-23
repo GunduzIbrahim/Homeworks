@@ -22,12 +22,13 @@ public abstract class Student {
 	public void study() {
 		
 	}
+
 	public abstract void register();
 
-	
+	@Override
 	public String toString() {
 		return "Student [no=" + no + ", name=" + name + ", year=" + year + ", dob=" + dob 
-				+ ", major=" + major + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() 
-				+ ", toString()=" + super.toString()+ "]";
+				+ ", major=" + major +"]";
 	}
+	
 }

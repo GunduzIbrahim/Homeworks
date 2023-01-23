@@ -12,14 +12,14 @@ public class VocationalStudent extends Student{
 		
 	}
 	
+	@Override
 	public void register() {
 		
 	}
 	
 	public String toString() {
 		return "VocationalStudent [no=" + no + ", name=" + name + ", year=" + year + ", dob=" + dob 
-				+ ", major=" + major + ", toString()=" + super.toString() + ", getClass()=" 
-				+ getClass() + ", hashCode()=" + hashCode()+ "]";
+				+ ", major=" + major + "]";
 	}
 
 }
