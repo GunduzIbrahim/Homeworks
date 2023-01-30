@@ -1,6 +1,5 @@
 package homework16;
 
-import java.util.NavigableSet;
 import java.util.TreeMap;
 
 public class Question1 {
