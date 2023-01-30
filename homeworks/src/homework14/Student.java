@@ -10,6 +10,10 @@ public abstract class Student {
 	Date dob;
 	String major;
 	
+	public Student() {
+		
+	}
+	
 	public Student(int no, String name, int year, Date dob, String major) {
 		super();
 		this.no = no;
